@@ -1,0 +1,65 @@
+#bhuvam{color:cornsilk}
+
+.bhuva{
+    background-color: black;
+margin-top: 20px;
+   
+}
+.bhuvam1{
+    color: aliceblue;
+}
+.bhuvam2{ color: black;}
+.bhuvam{
+    color: black;
+}
+#bhuvam3{color:rgba(2, 2, 48,1);
+    
+}
+
+
+.bhuvam4{
+    color: black;
+}
+#bhuvam4{
+    color:darkolivegreen;
+}
+.bhuvam3{
+    background-color: aliceblue;
+}
+
+#footer{
+   
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    
+}
+.list{
+    font-size: 20px;
+}
+.wd{
+    width: 100%;
+}
+.formmargin{
+    margin-right: 690px;
+    background-color: rgb(226, 231, 231);
+}
+.list2{
+    font-size: 28px;
+}
+.bgcolor{
+    background-color: rgba(193, 190, 190,0.2);
+}
+.formcolor{
+    background-color: rgb(129, 166, 234);
+}
+.center{
+    text-align: center;
+    background-color: #a8a088;
+    height: 80px;
+}
+.bulet1{
+   list-style: none;
+   background-color: #e0ded7;
+}
+

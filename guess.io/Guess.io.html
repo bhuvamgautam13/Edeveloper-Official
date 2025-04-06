@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess A Number</title>
+   <link rel="stylesheet" href="GUESS.io.css">
+</head>
+<body>
+    <h1>Guess The Number</h1>
+    <h2>The Number Should Be Between 1 and 100</h2>
+    <div class="container">
+        <input type="text" id="guessinput" placeholder="Enter a number ">
+        <button id="guessbtn" >Guess</button>
+        <p class="feedback" id="feedback"></p>
+        <p id="attempts"></p>
+    </div>
+    <!-- Popup Modal -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <p>Congratulations! You guessed the correct number!</p>
+            <p>Do you want to play again?</p>
+            <button id="yesBtn">Yes</button>
+            <button id="noBtn">No</button>
+        </div>
+    </div>
+
+   
+  
+    <script>
+        let secretNumber = Math.floor(Math.random() * 100) + 1;
+        let attempts=0;
+        let guessbtn=document.getElementById('guessbtn');
+        const guessinput=document.getElementById('guessinput');
+        const popup = document.getElementById('popup');
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        const playAgainBtn = document.getElementById('playAgainBtn');
+       
+        function CheckGuess(){
+            console.log("inside guess number function");
+            const userGuess=document.getElementById('guessinput').value;
+            const feedback=document.getElementById('feedback');
+            const attemptsDisplay=document.getElementById('attempts');
+            console.log("userGuess",userGuess);
+            console.log(typeof(userGuess));
+            
+            if (userGuess==""){
+                feedback.textContent="Please enter a number!";
+                feedback.style.color="red";
+            }
+            
+            const guess=parseInt(userGuess);
+            if (guess-secretNumber ==0){
+                attempts++;
+                feedback.textContent=`Congratulations! You guessed the number after ${attempts} attempts!`;
+                feedback.style.color="green";
+                
+                feedback.classList.add("correct"); // Add animation class
+                  setTimeout(() => feedback.classList.remove("correct"), 1000); //   Remove class after animation
+                 
+                  attempts =0; // Reset attempts after correct guess
+                  showPopup(); 
+   
+    
+                
+
+            }
+            else if(guess-secretNumber <= -10){
+                attempts++;
+                feedback.textContent=`Too low! Try again. total attempts: ${attempts}`;
+                feedback.style.color="orange";
+                feedback.classList.add("incorrect"); // Add incorrect animation class
+    setTimeout(() => feedback.classList.remove("incorrect"), 500); // Remove class after animation
+        
+            }
+            else if(guess-secretNumber >= 10){
+                attempts++;
+                feedback.textContent=`Too high! Try again. total attempts: ${attempts}`;
+                feedback.style.color="darkblue";
+                feedback.classList.add("incorrect"); // Add incorrect animation class
+    setTimeout(() => feedback.classList.remove("incorrect"), 500); // Remove class after animation
+            }
+            else if(guess-secretNumber<10 && guess-secretNumber>0
+){
+    attempts++;
+                feedback.textContent=`Very close! Try Decreasing. total attempts: ${attempts}`;
+                feedback.style.color="#738206";
+                feedback.classList.add("incorrect"); // Add incorrect animation class
+      setTimeout(() => feedback.classList.remove("incorrect"), 500); // Remove class after animation
+            }
+            else if(guess-secretNumber>-10 && guess-secretNumber<0){
+                attempts++;
+                feedback.textContent=`Very close! Try Increasing. total attempts: ${attempts}`;
+                feedback.style.color="purple";
+                feedback.classList.add("incorrect"); // Add incorrect animation class
+    setTimeout(() => feedback.classList.remove("incorrect"), 500); // Remove class after animation
+            } 
+
+            else{
+                feedback.textContent=`Please enter a valid number! total attempts: ${attempts}`;
+                feedback.style.color="red";
+                feedback.classList.add("incorrect"); // Add incorrect animation class
+    setTimeout(() => feedback.classList.remove("incorrect"), 500); // Remove class after animation
+            }
+
+            
+        }
+ function showPopup() {
+            popup.classList.remove('hidden');
+        }
+
+        function hidePopup() {
+            popup.classList.add('hidden');
+        }
+
+
+        yesBtn.addEventListener('click', () => {
+            hidePopup();
+            window.location.reload(); // Reload the page to reset the game
+        });
+
+        noBtn.addEventListener('click', () => {
+            window.location.href="thanks.html";// Show the Thank You screen
+        });
+        guessbtn.addEventListener('click', CheckGuess);
+        guessinput.addEventListener('keydown', function(event) {
+        if (event.key === "Enter") {
+            CheckGuess();
+        }
+    });
+   
+   
+    
+        
+    </script>
+</body>
+</html>
