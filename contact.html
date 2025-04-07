@@ -65,33 +65,26 @@
 
         </h5>
 
-
-        <form class=" formmargin">
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">&nbsp;&nbsp;&nbsp;Name</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">&nbsp;&nbsp;&nbsp;Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">&nbsp;&nbsp;&nbsp;Subject:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">&nbsp;&nbsp;&nbsp;Message:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Above Information is checked and filled
-                    correctly</label>
-            </div>
-            &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
 
         <br><br>
         <h1><strong>Frequently Asked Questions

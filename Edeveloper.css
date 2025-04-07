@@ -27,13 +27,14 @@ margin-top: 20px;
     background-color: aliceblue;
 }
 
-#footer{
-   
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    
+#footer {
+  text-align: center;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  padding: 10px 0;
 }
+
 .list{
     font-size: 20px;
 }
@@ -95,5 +96,75 @@ p {
 
 .list-group-item {
   font-size: 1.2em; /* Larger list items */
+}
+
+/* Ensure images and videos are responsive */
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust modal width for smaller screens */
+.modal-dialog {
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Adjust footer for smaller screens */
+@media (max-width: 768px) {
+  #footer {
+    position: static;
+    text-align: center;
+  }
+
+  .nav.col-md-4 {
+    justify-content: center;
+  }
+}
+
+/* Adjust carousel captions for smaller screens */
+@media (max-width: 576px) {
+  .carousel-caption {
+    font-size: 14px;
+  }
+
+  .carousel-caption h2 {
+    font-size: 18px;
+  }
+
+  .carousel-caption button {
+    font-size: 12px;
+  }
+}
+
+/* Adjust game container for smaller screens */
+@media (max-width: 768px) {
+  .game-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .game-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* Adjust text size for smaller screens */
+@media (max-width: 576px) {
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+}
+
+/* Adjust form layout for smaller screens */
+@media (max-width: 768px) {
+  .formmargin {
+    margin-right: 0;
+    padding: 10px;
+  }
 }
 
