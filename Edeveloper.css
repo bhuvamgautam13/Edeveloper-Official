@@ -33,6 +33,7 @@ margin-top: 20px;
   background-color: #343a40;
   color: white;
   padding: 10px 0;
+  position: static; /* Ensure the footer is not sticky or fixed */
 }
 
 .list{
