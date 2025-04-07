@@ -1,35 +1,178 @@
-<nav class="navbar  sticky-top navbar-dark bg-dark">
+<!doctype html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New Features - EDEVELOPER</title>
+  <link rel="stylesheet" href="Edeveloper.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
 
+<body class="bgcolor">
+
+  <!-- Navbar -->
+  <nav class="navbar sticky-top navbar-dark bg-dark">
     <div class="container-fluid">
-        <a id="ecode" class="navbar-brand  " href="#">
-            <img src="preview-page0.jpg" alt="EDEVELOPER" width="60" height="100%"> </a><a class="navbar-brand"
-            href="#">EDEVELOPER - DEVELOPING FOR BEGINEERS</a>
+      <a id="ecode" class="navbar-brand" href="#">
+        <img src="logo.png" alt="EDEVELOPER" width="60" height="100%"> </a>
+      <a class="navbar-brand" href="#">EDEVELOPER - DEVELOPING FOR BEGINNERS</a>
 
-
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about2.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact2.html">Contact Us</a>
-                </li>
-
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about2.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-</nav>
+  </nav>
+
+  <!-- New Features Section -->
+  <div class="container my-5">
+    <h1 class="text-center mb-4">What's New at EDEVELOPER?</h1>
+    <p class="lead text-center">
+      We are constantly evolving to bring you the best tools and resources for your development journey. Check out the
+      latest features and updates we’ve added to make your experience even better!
+    </p>
+
+    <div class="row text-center mt-5">
+      <div class="col-md-4">
+        <h3>Interactive Tutorials</h3>
+        <p>Learn by doing with our new interactive coding tutorials. Practice real-world scenarios and build projects
+          step-by-step.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Community Forums</h3>
+        <p>Connect with other developers, ask questions, and share knowledge in our newly launched community forums.</p>
+      </div>
+      <div class="col-md-4">
+        <h3>Advanced Challenges</h3>
+        <p>Test your skills with advanced coding challenges and compete with others to climb the leaderboard.</p>
+      </div>
+    </div>
+
+    <div class="row text-center mt-5">
+      <div class="col-md-6">
+        <h3>Mobile App</h3>
+        <p>Access EDEVELOPER on the go with our new mobile app, available for both Android and iOS.</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Personalized Dashboard</h3>
+        <p>Track your progress, set goals, and get personalized recommendations with our new dashboard feature.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">What Our Users Say</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <blockquote class="blockquote">
+          <p>"EDEVELOPER has completely transformed the way I learn coding. The interactive tutorials are amazing!"</p>
+          <footer class="blockquote-footer">John Doe</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4">
+        <blockquote class="blockquote">
+          <p>"The community forums are a great place to connect with other developers and get help."</p>
+          <footer class="blockquote-footer">Jane Smith</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4">
+        <blockquote class="blockquote">
+          <p>"I love the new personalized dashboard. It keeps me motivated and on track."</p>
+          <footer class="blockquote-footer">Michael Lee</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+            aria-expanded="true" aria-controls="collapse1">
+            What is EDEVELOPER?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            EDEVELOPER is a platform designed to help beginners and experienced developers learn, grow, and build their
+            skills in various fields of development.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+            aria-expanded="false" aria-controls="collapse2">
+            Is EDEVELOPER free to use?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, EDEVELOPER is completely free to use. We believe in making learning accessible to everyone.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
+            aria-expanded="false" aria-controls="collapse3">
+            How can I get started?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Simply sign up for an account, explore our tutorials, and start learning at your own pace.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="container text-center my-5">
+    <h2>Start Exploring Today!</h2>
+    <p>Join thousands of developers who are learning, growing, and building amazing things with EDEVELOPER.</p>
+    <a href="signup.html" class="btn btn-primary btn-lg">Sign Up Now</a>
+  </div>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2025 EDEVELOPER. All Rights Reserved.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+        <li class="list-inline-item"><a href="about2.html" class="text-white">About</a></li>
+        <li class="list-inline-item"><a href="contact.html" class="text-white">Contact Us</a></li>
+        <li class="list-inline-item"><a href="login.html" class="text-white">Login</a></li>
+      </ul>
+    </div>
+  </footer>
+<script src="Edeveloper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

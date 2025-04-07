@@ -79,3 +79,21 @@ margin-top: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Increase font size for the About page */
+body.bgcolor {
+  font-size: 20px; /* Adjust the size as needed */
+  line-height: 1.8; /* Improves readability */
+}
+
+h1, h2, h3 {
+  font-size: 1.8em; /* Larger headings for emphasis */
+}
+
+p {
+  font-size: 1.2em; /* Slightly larger paragraph text */
+}
+
+.list-group-item {
+  font-size: 1.2em; /* Larger list items */
+}
+
