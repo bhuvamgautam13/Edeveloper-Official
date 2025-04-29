@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* General Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
     color: #333;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    min-height: 100vh; /* Ensure the body takes up the full height of the viewport */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,13 +30,15 @@ h2 {
     font-weight: 400;
 }
 
+/* Main Content Styling */
 .container {
-    margin: 20px auto;
-    padding: 30px;
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
     max-width: 400px;
     background: rgba(255, 255, 255, 0.95);
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    flex-grow: 1; /* Allow the container to grow and fill available space */
 }
 
 input[type="text"] {
@@ -240,6 +242,63 @@ button:hover {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background: linear-gradient(90deg, #0d47a1, #1976d2); /* Gradient background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensure full width */
+    margin: 0; /* Remove any default margins */
+    padding: 0;
+}
+
+.navbar-brand img {
+    border-radius: 50%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e3f2fd !important;
+}
+
+.navbar-nav .nav-link {
+    color: #e3f2fd !important; /* Light blue for links */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #bbdefb !important; /* Softer blue on hover */
+}
+
+.navbar-toggler {
+    border-color: #e3f2fd;
+}
+
+/* Footer Styling */
+footer {
+    background: #0d47a1; /* Dark blue background */
+    color: #e3f2fd;
+    padding: 10px 0; /* Reduce padding */
+    width: 100%; /* Ensure full width */
+    margin-top: auto; /* Push the footer to the bottom of the page */
+}
+
+/* Footer Links */
+footer a {
+    color: #bbdefb; /* Softer blue for footer links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff; /* White on hover */
+}
+
+footer .list-inline-item {
+    margin: 0 10px;
 }
 
 @media (max-width: 768px) {
